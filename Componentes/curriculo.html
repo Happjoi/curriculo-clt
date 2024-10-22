@@ -3,61 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo de João Ítalo</title>
-    <style>
-    
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            text-align: center;
-            padding: 15px;
-            background-color: #333;
-            color: #fff;
-        }
-        nav {
-            margin: 20px;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            padding: 10px;
-            color: #333;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            background-color: #ddd;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        iframe {
-            display: block;
-            width: 80%;
-            height: 500px;
-            margin: 20px auto;
-            border: 1px solid #ccc;
-        }
-    </style>
+    <title>Currículo Interativo - João Ítalo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <div class="container mt-5 text-center">
+  
+        <header class="mb-5">
+            <img src="assets/minha-foto.png" alt="Minha Foto" class="rounded-circle" width="150">
+            <h1 class="mt-3">João Ítalo Deodato Santos</h1>
+            <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/joão-italo-deodato-889533300/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/Happjoi" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://www.instagram.com/happ.joi/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+        </header>
 
-    <header>
-        <h1>João Italo Deodato Santos</h1>
-    </header>
+      
+        <div class="mb-4">
+            <a href="identificacao.html" target="content" class="btn btn-outline-primary">Identificação</a>
+            <a href="formacao.html" target="content" class="btn btn-outline-primary">Formação</a>
+            <a href="skills.html" target="content" class="btn btn-outline-primary">Habilidades</a>
+            <a href="projetos.html" target="content" class="btn btn-outline-primary">Projetos</a>
+        </div>
 
-    <nav>
-        <a href="identificacao.html" target="main">Sobre mim</a>
-        <a href="formacao.html" target="main">Formação</a>
-        <a href="softskills.html" target="main">Soft Skills</a>
-        <a href="contato.html" target="main">Contato</a>
-        <a href="projetos.html" target="main">Projetos</a>
-    </nav>
+ 
+        <iframe src="identificacao.html" name="content" width="100%" height="600px" class="iframe-content"></iframe>
 
-    <iframe src="identificacao.html" name="main"></iframe>
+      
+        <footer class="mt-5">
+            <p>&copy; 2024 João Ítalo Deodato Santos</p>
+        </footer>
+    </div>
 
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
